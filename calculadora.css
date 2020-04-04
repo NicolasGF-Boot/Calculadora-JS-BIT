@@ -1,19 +1,46 @@
-.calculadora{
+    .calculadora{
         display: grid;
         grid-template-columns: repeat(4,3fr);
         grid-gap:10px;
         width: 70%;
         margin: 20px auto;
         text-align: center;
-        background-color: gray;
+        background-color:#d8d8d8;
+        border-radius: 25px;
+        padding: 20px 20px;
+        font-size: 25pt;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
     #resultado{
         grid-column-start: 1;
         grid-column-end: 5;
         grid-row-start: 0;
         grid-row-end: span 1;
-        background-color: wheat;
+        background-color: white;
         height: 30px;
+        padding: 20px 20px;
+        font-size: 30pt;
+    }
+    .numero, .operacion{
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid #969696 2px;
+        border-radius: 15px;
+        cursor: pointer;
+        
+    }
+    .numero:hover{
+        background-color:#cccaca ;
+    }
+    .operacion:hover{
+        background-color:#585858 ;
+    }
+    .operacion{
+        background-color: gray;
+        border: none;
+        color: white;
     }
     .numero:nth-of-type(5){
         grid-column-start: 1;
@@ -57,10 +84,11 @@
         grid-row-start: 5;
         grid-row-end: 6;
     }
-    .operacion:nth-of-type(2){
-        grid-column-start: 3;
-        grid-column-end: 4;
-        grid-row-start: 5;
-        grid-row-end: 6;
+    .calculadora .operacion:nth-of-type(0){
+        background-color: blue !important;
+    }
+    .creditos{
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
     
